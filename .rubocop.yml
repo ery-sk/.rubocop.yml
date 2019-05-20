@@ -1,0 +1,33 @@
+# Put this in your `Gemfile`.
+# ```rb:Gemfile
+# gem 'rubocop'
+# gem 'rubocop-performance'
+# ```
+
+# If your app is built with Rails
+Rails:
+  Enabled: true
+
+require: rubocop-performance
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
+    - config/**/*.rb
+    - db/migrate/*.rb
+    - lib/tasks/**/*.rake
+    - Gemfile
+
+Metrics/LineLength:
+  AllowHeredoc: true
+  AllowURI: true
+  Max: 120
+  Exclude:
+    - spec/**/*
+
+Metrics/ModuleLength:
+  Exclude:
+    - spec/**/*
+
+Style/AsciiComments:
+  Enabled: false
