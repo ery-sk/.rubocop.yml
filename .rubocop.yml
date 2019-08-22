@@ -2,13 +2,12 @@
 # ```rb:Gemfile
 # gem 'rubocop'
 # gem 'rubocop-performance'
+# gem 'rubocop-rails'
 # ```
 
-# If your app is built with Rails
-Rails:
-  Enabled: true
-
-require: rubocop-performance
+require:
+  - rubocop-performance
+  - rubocop-rails
 
 Metrics/BlockLength:
   Exclude:
