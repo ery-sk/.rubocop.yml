@@ -9,6 +9,11 @@ require:
   - rubocop-performance
   - rubocop-rails
 
+AllCops:
+   Exclude:
+    - bin/**
+
+
 Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
@@ -29,4 +34,7 @@ Metrics/ModuleLength:
     - spec/**/*
 
 Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
   Enabled: false
