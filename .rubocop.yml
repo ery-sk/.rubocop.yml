@@ -13,7 +13,6 @@ AllCops:
    Exclude:
     - bin/**
 
-
 Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
