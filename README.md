@@ -19,7 +19,9 @@
 - Style/AsciiComments
   - アルファベット以外での(日本語)コメントを許可する
 - Style/BlockDelimiters
-  - ワンラインの場合ブロックは`{}`で書く
-  - 戻り値にメソッドがチェインしている場合のブロックは`{}`で書く
+  - AllowBracesOnProceduralOneLiners
+    - ワンラインの場合ブロックは`{}`で書く
+  - EnforcedStyle
+    - 戻り値にメソッドがチェインしている場合のブロックは`{}`で書く
 
 https://github.com/cookpad/global-style-guides/blob/master/.rubocop.yml
