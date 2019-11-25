@@ -37,3 +37,7 @@ Style/AsciiComments:
 
 Style/Documentation:
   Enabled: false
+  
+Style/BlockDelimiters:
+  AllowBracesOnProceduralOneLiners: true
+  EnforcedStyle: braces_for_chaining
